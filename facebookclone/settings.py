@@ -12,6 +12,8 @@ ALLOWED_HOSTS = [
     'djangotestapp-almaszr.azurewebsites.net'
 ]
 
+CSRF_TRUSTED_ORIGINS = ['djangotestapp-almaszr.azurewebsites.net']
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
