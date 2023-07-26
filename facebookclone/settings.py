@@ -9,10 +9,14 @@ SECRET_KEY = 'django-insecure-b-pvk#gl++d%fz!3m%q(u68jj+^-ps8+p5v*h&&k)!w$ra2qls
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'djangotestapp-almaszr.azurewebsites.net'
+    'djangotestapp-almaszr.azurewebsites.net',
+    'https://djangotestapp-almaszr.azurewebsites.net'
 ]
 
-CSRF_TRUSTED_ORIGINS = ['djangotestapp-almaszr.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = [
+    'djangotestapp-almaszr.azurewebsites.net',
+    'https://djangotestapp-almaszr.azurewebsites.net'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
