@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a class="btn btn-outline-primary mb-4" href="{% url 'post.list' %}">Back</a>
+
+<p><span class="badge bg-primary">{{ post.topic }}</span></p>
+<p>{{ post.text }}</p>
+<hr>
+<p>{{ author }}</p>
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a href="{% url 'post.create' %}" class="btn btn-success mb-3">Create new post</a>
+
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-4 mb-2">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.topic }}</h5>
+            <p class="card-text">{{ post.text }}</p>
+            <a href="{% url 'post.details' id=post.id %}" class="btn btn-primary mb-3">Details</a>
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
