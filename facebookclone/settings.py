@@ -6,9 +6,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b-pvk#gl++d%fz!3m%q(u68jj+^-ps8+p5v*h&&k)!w$ra2qls'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'djangotestapp-almaszr.azurewebsites.net'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
